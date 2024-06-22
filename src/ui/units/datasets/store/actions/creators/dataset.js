@@ -560,13 +560,13 @@ export function getSources(connectionId, workbookId) {
                 ({source_type: sourceType}) => !SUBSELECT_SOURCE_TYPES.includes(sourceType),
             );
             
-            try {
+//            try {
                 // ограничиваем по безопасности
-                var _data = await Utils.tables(list);
-                list = _data || [];
-            } catch(e) {
-                list = []
-            }
+//                var _data = await Utils.tables(list);
+//                list = _data || [];
+//            } catch(e) {
+//                list = []
+//            }
             
             dispatch(
                 addAvatarPrototypes({
